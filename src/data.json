@@ -1,0 +1,18 @@
+{
+  "Yavne": {
+    "name": "Yavne",
+    "temprature": "25",
+    "description": "Mostly cloudy",
+    "humidity": "76%",
+    "wind": "6 km/h",
+    "icon": "//ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+  },
+  "London": {
+    "name": "London, UK",
+    "temprature": "16",
+    "description": "Light rain showers",
+    "humidity": "88%",
+    "wind": "13 km/h",
+    "icon": "//ssl.gstatic.com/onebox/weather/64/rain_light.png"
+  }
+}
