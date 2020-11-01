@@ -1,8 +1,21 @@
 import React from "react";
 import data from '../data.json'
 
-const WeatherList =()=> {
-
+const WeatherList = () => {
+    const parseData = () => {
+        const res=[]
+        for (const [key, value] of Object.entries(data)) {
+            res.push( <tr key={key}>
+                <td>{value.name}</td>
+                <td>{value.description}</td>
+                <td>{value.temprature}</td>
+                <td>{value.humidity}</td>
+                <td>{value.wind}</td>
+                <td><img src={value.icon} alt={`${value.description} icon`}/></td>
+            </tr>)
+        }
+        return res;
+    }
     return (
         <table>
             <thead>
@@ -16,18 +29,10 @@ const WeatherList =()=> {
             </tr>
             </thead>
             <tbody>
-            <tr key={data.name}>
-                <td>{data.name}</td>
-                <td>{data.description}</td>
-                <td>{data.temprature}</td>
-                <td>{data.humidity}</td>
-                <td>{data.wind}</td>
-                <td><img src={data.icon} alt=""/></td>
-            </tr>
+            {parseData()}
             </tbody>
         </table>
     )
 }
 
 export default WeatherList;
-

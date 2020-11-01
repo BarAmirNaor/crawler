@@ -36,7 +36,7 @@ context('Window', () => {
 
         })
 
-        weather["Yavne"]=temp;
+      weather["Yavne"]=temp;
         cy.writeFile('src/data.json', weather)
     });
     it('fetch London weather', () => {
@@ -68,7 +68,7 @@ context('Window', () => {
 
         })
 
-        weather["London"]=temp;
+    weather["London"]=temp;
         cy.writeFile('src/data.json', weather)
     });
 
