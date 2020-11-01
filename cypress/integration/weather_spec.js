@@ -7,11 +7,10 @@ context('Window', () => {
         cy.visit('https://www.google.com/en')
         temp = {}
     })
-    it('fetch Yavne weather', () => {
-        // https://on.cypress.io/document
+    it('fetch city1 weather', () => {
 
         const input = cy.get("#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input")
-        input.first().focus().type("Yavne weather");
+        input.first().focus().type("tel aviv weather");
         cy.get("#tsf > div:nth-child(2) > div.A8SBwf > div.FPdoLc.tfB0Bf > center > input.gNO89b").click({force: true}).then(() => {
 
             cy.get("#wob_loc").invoke('text').then(txt => {
@@ -36,12 +35,10 @@ context('Window', () => {
 
         })
 
-      weather["Yavne"]=temp;
+      weather["city1"]=temp;
         cy.writeFile('src/data.json', weather)
     });
-    it('fetch London weather', () => {
-        // https://on.cypress.io/document
-
+    it('fetch city2 weather', () => {
         const input = cy.get("#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input")
         input.first().focus().type("London weather");
         cy.get("#tsf > div:nth-child(2) > div.A8SBwf > div.FPdoLc.tfB0Bf > center > input.gNO89b").click({force: true}).then(() => {
@@ -67,8 +64,7 @@ context('Window', () => {
             })
 
         })
-
-    weather["London"]=temp;
+    weather["city2"]=temp;
         cy.writeFile('src/data.json', weather)
     });
 

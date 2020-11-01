@@ -1,18 +1,18 @@
 {
-  "Yavne": {
-    "name": "Yavne",
+  "city1": {
+    "name": "Tel Aviv-Yafo",
     "temprature": "24",
-    "description": "Clear with periodic clouds",
+    "description": "Mostly cloudy",
     "humidity": "71%",
-    "wind": "5 km/h",
-    "icon": "//ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+    "wind": "3 km/h",
+    "icon": "//ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
   },
-  "London": {
+  "city2": {
     "name": "London, UK",
-    "temprature": "16",
+    "temprature": "17",
     "description": "Cloudy",
-    "humidity": "89%",
-    "wind": "21 km/h",
+    "humidity": "87%",
+    "wind": "23 km/h",
     "icon": "//ssl.gstatic.com/onebox/weather/64/cloudy.png"
   }
 }
