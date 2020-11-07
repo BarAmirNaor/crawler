@@ -19,10 +19,8 @@ export default function BasicTable() {
     const classes = useStyles();
 
     const parseData = () => {
-        console.log("bar")
         const res = []
         for (const [key, value] of Object.entries(data)) {
-            console.log("amir")
             res.push(<TableRow key={key} >
                 <TableCell >{value.name}</TableCell>
                 <TableCell align="right">{value.description}</TableCell>
